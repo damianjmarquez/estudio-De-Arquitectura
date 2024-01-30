@@ -33,11 +33,11 @@ insert into materiales(nombre) values ("ladrillo 15x20");
 insert into materiales(nombre) values ("20l pintura latex blanco");
 insert into materiales(nombre) values ("caño de 1/2 rosca plastico");
 
-insert into materiales(nombre) values ("timbre portero 231");
-insert into materiales(nombre) values ("cable canal interior");
-insert into materiales(nombre) values ("codo rosca 1/2");
-insert into materiales(nombre) values ("rodillo 6 pulgadas");
-insert into materiales(nombre) values ("sellarosca");
+insert into materiales(nombre) values ("hierro del 8");
+insert into materiales(nombre) values ("hierro del 10");
+insert into materiales(nombre) values ("hierro del 12");
+insert into materiales(nombre) values ("caja ceramica violeta");
+insert into materiales(nombre) values ("vigas 3.20");
 
 ALTER TABLE materiales
 ADD COLUMN cantidad_inicial INT DEFAULT 1000;
@@ -81,7 +81,7 @@ ON UPDATE CASCADE
 ON DELETE CASCADE;
 
 #insrtar contratistas
-insert into contratistas(idarquitecto,nombre,apellido,idtarea) values (2,"Jose","Perez", 1);
+insert into contratistas(idarquitecto,nombre,apellido,idtarea) values (4,"Marcelo","Boris", 2);
 insert into contratistas(idarquitecto,nombre,apellido,idtarea) values (3,"Manuel","Solis", 1);
 insert into contratistas(idarquitecto,nombre,apellido,idtarea) values (1,"Esteban","Perety", 4);
 insert into contratistas(idarquitecto,nombre,apellido,idtarea) values (2,"Natalia","Volpini", 3);
@@ -138,7 +138,7 @@ ON DELETE CASCADE;
 
 
                        
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,6,2,250000,3,"Finalizado","2021-10-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,6,6,250000,3,"Finalizado","2021-10-10");
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,7,1,350000,2,"En curso","2021-05-10");
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,8,5,185550,4,"Finalizado","2021-05-10");
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,9,4,500352,1,"En curso","2021-05-10");
@@ -146,13 +146,21 @@ insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,f
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,9,1,540250,4,"En curso","2023-04-10");
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,8,2,320150,5,"Finalizado","2021-08-10");
 
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,7,2,250000,3,"Finalizado","2021-10-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,6,1,350000,2,"En curso","2022-10-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,8,5,185550,4,"Finalizado","2023-10-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,9,4,500352,1,"En curso","2022-05-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,10,3,120200,5,"En curso","2022-03-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,1,1,540250,4,"En curso","2021-07-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,1,2,320150,5,"Finalizado","2023-08-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,11,2,250000,3,"Finalizado","2021-10-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,11,1,350000,2,"En curso","2022-10-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,12,5,185550,4,"Finalizado","2023-10-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,13,4,500352,1,"En curso","2022-05-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,15,3,120200,5,"En curso","2022-03-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,14,1,540250,4,"En curso","2021-07-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,12,2,320150,5,"Finalizado","2023-08-10");
+
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,11,2,352000,3,"Finalizado","2021-07-20");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,11,1,529230,2,"En curso","2022-01-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,12,5,185550,4,"Finalizado","2023-03-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,13,4,600520,1,"En curso","2022-04-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,15,3,103500,5,"En curso","2022-05-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,14,1,540250,4,"En curso","2021-09-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,12,2,320150,5,"Finalizado","2023-09-10");
                        
 #crear tabla de localidades
 create table localidades(
