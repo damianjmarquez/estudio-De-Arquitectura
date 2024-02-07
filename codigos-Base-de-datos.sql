@@ -137,14 +137,14 @@ ON UPDATE CASCADE
 ON DELETE CASCADE;
 
 
-                       
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,6,6,250000,3,"Finalizado","2021-10-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,7,1,350000,2,"En curso","2021-05-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,8,5,185550,4,"Finalizado","2021-05-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,9,4,500352,1,"En curso","2021-05-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,10,3,120200,5,"En curso","2021-04-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,9,1,540250,4,"En curso","2023-04-10");
-insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,8,2,320150,5,"Finalizado","2021-08-10");
+use greenarquitectura;
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,6,6,250000,1,"Finalizado","2022-12-05");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,7,1,350000,2,"Finalizado","2022-12-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,8,5,185550,2,"Finalizado","2022-12-02");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(1,9,4,500352,1,"Finalizado","2022-05-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,10,3,120200,2,"Finalizado","2022-04-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(4,9,1,540250,1,"Finalizado","2022-04-10");
+insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,8,2,320150,1,"Finalizado","2022-09-10");
 
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(2,11,2,250000,3,"Finalizado","2021-10-10");
 insert into trabajos(idlocalidad,idmaterial,idcontratista,precio,idtipo,estado,fecha)values(3,11,1,350000,2,"En curso","2022-10-10");
